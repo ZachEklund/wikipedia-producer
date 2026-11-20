@@ -1,14 +1,12 @@
 name: test
 
 on:
-  push:
-    tags:
-      - "[0-9]+.[0-9]+"
+  workflow_call:   # called by docker.yml before building
 
 jobs:
   test:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     env:
       KAFKA_BROKER: 127.0.0.1:49092
     steps:

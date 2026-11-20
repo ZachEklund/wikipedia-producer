@@ -1,5 +1,7 @@
 # Wikipedia Producer
 
+Neal was here.
+
 A containerized Kafka producer. This repository helps demonstrate automated tests and builds with GitHub Actions.
 
 ## Run locally against a Kafka/Redpanda stack in Docker
